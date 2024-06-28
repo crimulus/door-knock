@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "doorknock",
+	"version": "1.0.1-1.20.1",
+	"name": "DoorKnock",
+	"description": "Knock on doors with attack",
+	"authors": [
+		"FEEDEMFISH"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+		"sources": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	},
+	"license": "MIT",
+	"icon": "assets/doorknock/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.feedemfish.DoorKnock"
+		],
+		"client":[
+			"net.feedemfish.DoorKnockClient"
+		]
+	},
+	"mixins": [
+		"doorknock.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
