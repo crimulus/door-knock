@@ -61,6 +61,6 @@ public class KnockOnDoors implements ModInitializer {
     public record Config(float volume) {}
 
     public static Identifier id(String path) {
-        return Identifier.of(MODID, path);
+        return new Identifier(MODID, path);
     }
 }

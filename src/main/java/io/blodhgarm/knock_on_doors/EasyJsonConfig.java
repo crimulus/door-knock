@@ -116,7 +116,7 @@ public class EasyJsonConfig<T> implements SimpleSynchronousResourceReloadListene
 
     @Override
     public Identifier getFabricId() {
-        return Identifier.of("easy_json_config", configName.toString().replace(":", "/"));
+        return new Identifier("easy_json_config", configName.toString().replace(":", "/"));
     }
 
     @Override
